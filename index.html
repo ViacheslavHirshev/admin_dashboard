@@ -8,34 +8,38 @@
 </head>
 
 <body>
-        <header>
-            <div class="ls-top">
-                <img class="search-icon"/>
+    <div class="primary-cont">
+        <header class="header-cont">
+            <div class="search-cont">
+                <img src="/Icons/search_28dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="loop_icon"/>
                 <input type="text" id="search-bar" name="search_bar"/>
             </div>
-
-            <div class="rs-top">
-                <img class="bell-icon" />
-                <img class="user-icon" />
+            
+            <div class="user-info">
+                <img src="/Icons/notifications_28dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="bell_icon"/>
+                <img class="user-icon" src="/Icons/cat-symbol-svgrepo-com.svg" alt="cat_icon" />
                 <span>Gordon Freeman</span>
             </div>
-
-            <div class="ls-bottom">
-                <img class="user-icon" />
-                <span>Hi there</span>
+            
+            <div class="greetings">
+                <img class="user-icon" src="/Icons/cat-symbol-svgrepo-com.svg" alt="cat_icon"/>
+                <div class="greetings-msg">
+                    <span>Hi there,</span>
+                    <span>Gordon Freeman (@gordon)</span>
+                </div>
             </div>
-
-            <div class="rs-bottom control-buttons">
-                <button class="control-button" type="button">New</button>
-                <button class="control-button" type="button">Upload</button>
-                <button class="control-button" type="button">Share</button>
+            
+            <div class="control-buttons">
+                <button class="control-btn" type="button">New</button>
+                <button class="control-btn" type="button">Upload</button>
+                <button class="control-btn" type="button">Share</button>
             </div>
-        </header> 
+        </header>     
 
-        <main>
-            <div class="projects-container">
-                <h2 class="section-name">Your Projects</h2>
-                <div class="projects">
+        <main class="main-container">
+            <section class="projects">
+                <h3 class="section-name">Your Projects</h3>
+                <div class="project-cards">
                     <div class="project-card"></div>
                     <div class="project-card"></div>
                     <div class="project-card"></div>
@@ -43,41 +47,83 @@
                     <div class="project-card"></div>
                     <div class="project-card"></div>
                 </div>
-            </div>
-
-            <div class="announcements-container">
-                <h2 class="section-name">Announcements</h2>
-            </div>
-
-            <div class="trending-container">
-                <h2 class="section-name">Trending</h2>
-            </div>
-        </main>
-
-        <aside>
-            <div class="logo">
-                <img class="logo-icon"/>
-                <h1 class="logo-name">Dashboard</h1>
-            </div>
-
-            <nav class="navigation">
-                <ul class="nav-list">
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                </ul>
-            </nav>
+            </section>
+    
+            <section class="announcements">
+                <h3 class="section-name">Announcements</h3>
+            </section>
             
-            <nav class="settings-menu">
-                <ul class="settings-list">
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+            <section class="trending">
+                <h3 class="section-name">Trending</h3>
+            </section>
+        </main>  
+        
+        <aside class="side-bar">
+            <div class="logo">
+                <img class="logo-icon" src="/Icons/dashboard_30dp_FFF.svg" alt="dashboard_icon"/>
+                <span class="logo-name">Dashboard</span>
+            </div>
+            
+            <nav class="navigation">
+                <ul class="board-navigation">
+                    <li>
+                        <a href="#">
+                            <img src="/Icons/home_30dp_FFF.svg" alt="home_icon"/>Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="/Icons/account_circle_30dp_FFFFFF.svg" alt="account_icon"/>Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="/Icons/mode_comment_30dp_FFF.svg" alt="message_icon"/>Messages
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="/Icons/watch_later_30dp_FFF.svg" alt="clock_icon" />History
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="/Icons/task_30dp_FFF.svg" alt="task_icon"/>Tasks
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="/Icons/groups_30dp_FFF.svg" alt="group_icon"/>Communities
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="settings">
+                    <li>
+                        <a href="#">
+                            <img src="/Icons/settings_30dp_FFF.svg" alt="settings_icon"/>Settings
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="/Icons/help_center_30dp_FFF.svg" alt="help_icon"/>Support
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="/Icons/verified_user_30dp_FFF.svg" alt="verified_icon"/>Privacy
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </aside>
+    </div>
 </body>
 </html>
